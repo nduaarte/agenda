@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  width: 42.5%;
+  width: 45%;
   height: 100%;
 
   border-right-width: 1px;
@@ -10,7 +10,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   font-size: 28px;
-  margin-top: 35px;
+  margin: 20px 0;
   align-self: center;
   font-weight: bold;
 `;

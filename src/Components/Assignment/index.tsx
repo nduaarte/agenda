@@ -20,6 +20,13 @@ interface ObjectTypes {
 const Assignment: React.FC<PropsTypes> = ({ titleName, description='(sem descrição)', schedulingData }) => {
   const { day, month, year, hours, minutes } = schedulingData;
 
+  const currentDay = new Date().getDay();
+  const currentMonth = new Date().getMonth();
+  const currentYear = new Date().getFullYear();
+  const currentHour = new Date().getHours();
+  const currentMinutes = new Date().getMinutes();
+
+
   return (
     <Container>
       <TitleName>{titleName}</TitleName>

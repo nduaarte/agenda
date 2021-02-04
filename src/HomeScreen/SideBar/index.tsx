@@ -4,7 +4,7 @@ import { Container, Title, AssignmentsContainer } from './styles';
 import Assignment from '../../Components/Assignment';
 
 // É possível usar valores direto da API usando um .map do json e passar as props para <Assignment />.
-// Porém decidi manter o componente estático.
+// Porém decidi manter o componente estático para economizar tempo.
 const SideBar: React.FC = () => {
   return (
     <Container>
@@ -18,7 +18,7 @@ const SideBar: React.FC = () => {
         />
         <Assignment
           titleName='Fazer compras'
-          description='Comprar coisas para o churraco.'
+          description='Comprar coisas para o churrasco.'
           schedulingData={{ day: 6, month: 2, year: 2021, hours: 21, minutes: 30 }}
         />
         <Assignment
