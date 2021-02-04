@@ -1,10 +1,14 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler'
 
+interface PropsTypes {
+  color: boolean;
+}
+
 export const Container = styled(RectButton)`
   margin-top: 5px;
   padding: 5px;
-  background-color: #aae6b0;
+  background-color: ${({ color }: PropsTypes) => color ? '#e89292' : '#aae6b0'};
   align-items: center;
 `;
 
@@ -20,7 +24,7 @@ export const TitleName = styled.Text`
 export const Description = styled.Text`
   margin: 10px 0;
   font-size: 12px;
-  color: gray;
+  color: #303030;
 `;
 
 export const Row = styled.View`

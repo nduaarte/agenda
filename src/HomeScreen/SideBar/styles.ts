@@ -15,6 +15,6 @@ export const Title = styled.Text`
   font-weight: bold;
 `;
 
-export const AssignmentsContainer = styled.View`
+export const AssignmentsContainer = styled.ScrollView`
 
 `;

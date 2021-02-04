@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Title, AssignmentsContainer } from './styles';
 
+import ButtonsSideBar from '../../Components/ButtonsSideBar';
 import Assignment from '../../Components/Assignment';
 
 // É possível usar valores direto da API usando um .map do json e passar as props para <Assignment />.
@@ -9,6 +10,7 @@ const SideBar: React.FC = () => {
   return (
     <Container>
       <Title>Lembretes</Title>
+      <ButtonsSideBar />
 
       <AssignmentsContainer>
         <Assignment
@@ -28,7 +30,12 @@ const SideBar: React.FC = () => {
         <Assignment
           titleName='Buscar filho na faculdade'
           description='Faculdade fica atras da igreja.'
-          schedulingData={{ day: 8, month: 2, year: 2021, hours: 22, minutes: 50 }}
+          schedulingData={{ day: 8, month: 1, year: 2021, hours: 22, minutes: 50 }}
+        />
+        <Assignment
+          titleName='Estudar'
+          description='Revisar conteudo para vestibular.'
+          schedulingData={{ day: 12, month: 3, year: 2021, hours: 18, minutes: 0 }}
         />
       </AssignmentsContainer>
     </Container>
