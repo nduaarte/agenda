@@ -1,13 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { Provider } from 'react-redux'
 
+import { store } from './src/redux';
 import HomeScreen from './src/HomeScreen';
 
 export default function App() {
   return (
-    <View>
-      <HomeScreen />
-    </View>
+    <Provider store={store}>
+      <HomeScreen/>
+      <StatusBar />
+    </Provider>
   );
 }
 
