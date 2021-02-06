@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler'
 
 interface PropsTypes {
-  color: boolean;
+  color: boolean | undefined;
 }
 
 export const Container = styled(RectButton)`

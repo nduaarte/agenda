@@ -33,7 +33,7 @@ export const ClosedAssignment = styled(RectButton)`
   width: 45%;
   padding: 10px 5px;
   border-radius: 8px;
-  margin-right: 2px;
+  margin-left: 2px;
 `;
 
 export const OpenAssignment = styled(RectButton)`
@@ -42,5 +42,5 @@ export const OpenAssignment = styled(RectButton)`
   width: 45%;
   padding: 10px 5px;
   border-radius: 8px;
-  margin-left: 2px;
+  margin-right: 2px;
 `;

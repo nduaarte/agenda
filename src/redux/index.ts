@@ -1,10 +1,10 @@
 import { createStore } from 'redux';
 import { combineReducers } from 'redux';
 
-import ArrayAssignmentReducer from './reducers/ArrayAssignmentsReducer';
+import showDisplayReducer from './reducers/showDisplayReducer';
 
 const rootReducer = combineReducers({
-  ArrayAssignmentReducer: ArrayAssignmentReducer
+  showDisplayReducer: showDisplayReducer
 });
 
 export const store = createStore(rootReducer);
