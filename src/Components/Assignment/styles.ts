@@ -6,8 +6,9 @@ interface PropsTypes {
 }
 
 export const Container = styled(RectButton)`
-  margin-top: 5px;
-  padding: 5px;
+  margin: 3px;
+  padding: 15px 5px;
+  border-radius: 10px;
   background-color: ${({ color }: PropsTypes) => color ? '#e89292' : '#aae6b0'};
   align-items: center;
 `;
@@ -15,23 +16,15 @@ export const Container = styled(RectButton)`
 
 export const TitleName = styled.Text`
   margin: 5px 0;
-
   font-size: 18px;
   font-weight: bold;
   color: #223324;
-`;
-
-export const Description = styled.Text`
-  margin: 10px 0;
-  font-size: 12px;
-  color: #303030;
 `;
 
 export const Row = styled.View`
   margin-top: 6px;
   flex-direction: row;
   align-items: center;
-  align-self: flex-end;
 `;
 
 export const SchedulingData = styled.Text`

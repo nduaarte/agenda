@@ -2,9 +2,6 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   width: 45%;
-  height: 100%;
-
-  border-right-width: 1px;
   border-color: gray;
 `;
 

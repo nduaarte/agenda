@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { AntDesign } from '@expo/vector-icons';
+import { useDispatch } from 'react-redux';
 
-import { Container, Row, TitleName, Description, SchedulingData, Hours } from './styles';
+import { Container, Row, TitleName, SchedulingData, Hours } from './styles';
 
-interface PropsTypes {
+export interface PropsTypes {
+  id: number;
   titleName: string;
-  description?: string;
   expired?: boolean;
   schedulingData: ObjectTypes;
 }
@@ -18,13 +19,17 @@ export interface ObjectTypes {
   minutes: number;
 }
 
-const Assignment: React.FC<PropsTypes> = ({ titleName, description = '(sem descrição)', schedulingData, expired }) => {
+const Assignment: React.FC<PropsTypes> = ({ id, titleName, schedulingData, expired }) => {
   const { year, month, day, hours, minutes } = schedulingData;
+  const dispatch = useDispatch();
+
+  function dispatching() {
+    dispatch({ type: 'UPDATE_CURRENT_ID', value: id});
+  }
 
   return (
-    <Container color={expired}>
+    <Container color={expired} onPress={() => dispatching()}>
       <TitleName>{titleName}</TitleName>
-      <Description>{description}</Description>
 
       <Row>
         <SchedulingData>{`${day}/${month}/${year}    `}</SchedulingData>

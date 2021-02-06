@@ -4,7 +4,7 @@ export interface RootState {
 }
 
 const INITIAL_STATE = {
-  showDiplay: 1,
+  showDiplay: 0,
 };
 
 function showDisplayReducer(state = INITIAL_STATE, action: { type: any; value: any; }) {
