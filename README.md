@@ -7,7 +7,7 @@ App simples que filtra tarefas de um arquivo ou API e mostra em forma de lista e
 ### Features
 - [X] Filtro das tarefas que já expiraram, ou apenas, as que ainda podem ser concluídas.
 - [X] Ver informações detalhadas sobre cada Tarefa, como: data de criação, edição e expiração.
-- [X] Funciona com ENORMES listas :O
+- [X] Funciona com ENORMES listas :hushed:
 
 ### Tecnologias usadas:
 
